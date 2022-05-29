@@ -19,7 +19,7 @@ import styles from "../../styles/layout/layout.module.css";
 import Drawer from "../navbar/miniDrawer";
 
 // Constants
-export const siteTitle = "LuisF3 App";
+export const siteTitle = "Developer LuisF3";
 
 // Interface
 declare module "@mui/material/styles" {
@@ -55,7 +55,7 @@ interface Props {
 
 // Component
 let Layout = ({ children }: Props) => {
-  let [mode, setMode] = React.useState("dark");
+  let [mode, setMode] = React.useState("light");
 
   const theme = createTheme({
     palette: {
@@ -98,7 +98,7 @@ let Layout = ({ children }: Props) => {
   theme.typography.h1 = {
     color: theme.palette.primary.main,
     textAlign: "center",
-    fontSize: "1.2rem",
+    fontSize: "1.4rem",
     "@media (min-width:600px)": {
       fontSize: "2.2rem",
     },
