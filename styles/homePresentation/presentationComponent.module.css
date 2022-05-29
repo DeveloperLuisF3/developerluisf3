@@ -1,0 +1,21 @@
+.card {
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .card {
+    max-width: 345px;
+    margin: 0% auto;
+  }
+}
+
+.cardMedia {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+.cardContent {
+  text-align: center;
+}
+.cardContent .title {
+  font-weight: bold;
+}
