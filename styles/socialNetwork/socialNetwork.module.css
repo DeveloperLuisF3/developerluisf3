@@ -1,0 +1,60 @@
+.SocialNetworkWrapper {
+  width: 75%;
+  margin: 0% auto;
+  padding: 0% 10% 5% 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.SocialNetworkWrapper h6 {
+  display: block;
+}
+.SocialNetworkWrapper .SocialIconFacebook {
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/socialNetwork/facebook.png");
+}
+.SocialNetworkWrapper .SocialIconFacebook:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+.SocialNetworkWrapper .SocialIconInstagram {
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/socialNetwork/instagram.png");
+}
+.SocialNetworkWrapper .SocialIconInstagram:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+.SocialNetworkWrapper .SocialIconTikTok {
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/socialNetwork/tiktok.png");
+}
+.SocialNetworkWrapper .SocialIconTikTok:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+.SocialNetworkWrapper .SocialIconGitHub {
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/socialNetwork/github.png");
+}
+.SocialNetworkWrapper .SocialIconGitHub:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+.SocialNetworkWrapper .SocialIconYouTube {
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/socialNetwork/youtube.png");
+}
+.SocialNetworkWrapper .SocialIconYouTube:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
