@@ -1,0 +1,35 @@
+.boxJs {
+  flex-grow: 1;
+  margin: 3% 0% 5% 0%;
+}
+
+/* imgJavascript */
+.JavascriptImgWrapper {
+  width: 100%;
+}
+.media {
+  width: 100%;
+  height: auto;
+}
+
+/* jsFullStack and jsDeveloper */
+.box {
+  min-width: 275px;
+  flex-grow: 1;
+}
+.title {
+  margin: 0% 5% 3% 5%;
+  text-align: center;
+  font-weight: bold;
+}
+.list {
+  margin-bottom: 2%;
+}
+.text1 {
+  margin-bottom: 3%;
+  display: flex;
+  text-align: justify;
+}
+.li {
+  margin-bottom: 10%;
+}
