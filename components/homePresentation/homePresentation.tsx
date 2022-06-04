@@ -13,7 +13,7 @@ import Stack from "@mui/material/Stack";
 
 // Component
 import PresentationComponent from "./presentationComponent";
-import VideoPresentation from "./videoPresentation";
+import ImgPresentation from "./imgPresentation";
 
 // Styled
 const Item = styled(Paper)(({ theme }) => ({
@@ -21,9 +21,6 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.h1,
   marginBotton: 3,
   padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.primary.main,
-  fontWeight: "bold",
 }));
 
 // Main Component
@@ -53,7 +50,7 @@ let BasicGrid = () => {
         </Grid>
         <Grid item xs={12} md={7}>
           <Paper elevation={0} sx={{ backgroundColor: "background.default" }}>
-            <VideoPresentation />
+            <ImgPresentation />
           </Paper>
         </Grid>
       </Grid>
