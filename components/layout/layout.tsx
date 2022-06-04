@@ -55,7 +55,7 @@ interface Props {
 
 // Component
 let Layout = ({ children }: Props) => {
-  let [mode, setMode] = React.useState("light");
+  let [mode, setMode] = React.useState("dark");
 
   const theme = createTheme({
     palette: {
@@ -91,27 +91,54 @@ let Layout = ({ children }: Props) => {
       }),
     },
     typography: {
-      fontFamily: "Georgia",
+      fontFamily: "Tahoma",
     },
   });
 
   theme.typography.h1 = {
-    color: theme.palette.primary.main,
     textAlign: "center",
-    fontSize: "1.4rem",
-    "@media (min-width:600px)": {
-      fontSize: "2.2rem",
+    fontSize: "2.5rem",
+    color: theme.palette.primary.main,
+    fontWeight: "bold",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "3rem",
     },
     [theme.breakpoints.up("md")]: {
+      fontSize: "3.5rem",
+    },
+    [theme.breakpoints.up("lg")]: {
       fontSize: "4rem",
     },
+  };
+
+  theme.typography.h2 = {
+    textAlign: "center",
+    fontSize: "2rem",
+    color: theme.palette.primary.main,
+    fontWeight: "bold",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "2.5rem",
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "3rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "3.5rem",
+    },
+  };
+
+  theme.typography.h3 = {
+    textAlign: "center",
+    fontSize: "1.5rem",
+    color: theme.palette.primary.main,
+    fontWeight: "bold",
   };
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Head>
-        <link rel="icon" href="/img/profile/luisf3.png" />
+        <link rel="icon" href="/img/avatar/luisf3.png" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta
           name="description"
@@ -143,7 +170,7 @@ let Layout = ({ children }: Props) => {
             </Typography>
             <span className={styles.logo}>
               <Image
-                src="/img/profile/luisf3.png"
+                src="/img/avatar/luisf3.png"
                 alt="Vercel Logo"
                 width={20}
                 height={20}
