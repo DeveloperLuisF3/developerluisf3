@@ -29,12 +29,7 @@ const bull = (
 const card = (
   <React.Fragment>
     <CardContent>
-      <Typography
-        variant="h6"
-        component="div"
-        color="primary.main"
-        className={styles.title}
-      >
+      <Typography variant="h3" component="div" className={styles.title}>
         FULL{bull}STACK{bull}JS{bull}DEVELOPER
       </Typography>
       <Typography variant="body2" className={styles.text1}>
@@ -84,7 +79,15 @@ let OutlineCard = () => {
           />
         </Stack>
       ) : (
-        <Card variant="outlined" sx={{ backgroundColor: "background.default" }}>
+        <Card
+          variant="outlined"
+          sx={{
+            backgroundColor: "background.default",
+            "@media (min-width:900px)": {
+              height: "400px",
+            },
+          }}
+        >
           {card}
         </Card>
       )}
