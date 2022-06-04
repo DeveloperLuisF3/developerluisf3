@@ -14,8 +14,9 @@
   justify-content: center;
 }
 .cardContent {
+  margin-bottom: 3%;
   text-align: center;
 }
 .cardContent .title {
-  font-weight: bold;
+  margin-bottom: 5%;
 }
