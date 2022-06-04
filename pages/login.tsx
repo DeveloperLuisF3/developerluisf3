@@ -65,7 +65,7 @@ let LoginApp = () => {
           <Card className={styles.card}>
             <CardMedia className={styles.cardMedia}>
               <Image
-                src="/img/profile/luisf3.png"
+                src="/img/avatar/luisf3.png"
                 alt="My Logo"
                 width="150%"
                 height="150%"
