@@ -14,13 +14,11 @@
 
 /* jsFullStack and jsDeveloper */
 .box {
-  min-width: 275px;
+  min-width: 250px;
   flex-grow: 1;
 }
 .title {
   margin: 0% 5% 3% 5%;
-  text-align: center;
-  font-weight: bold;
 }
 .list {
   margin-bottom: 2%;
@@ -31,5 +29,7 @@
   text-align: justify;
 }
 .li {
-  margin-bottom: 10%;
+  margin-bottom: 0%;
 }
+
+/* margin-bottom: 10%; */
