@@ -17,7 +17,7 @@ import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
 
 // Image
-import profilePic from "../../public/img/profile/luisf3.png";
+import profilePic from "../../public/img/avatar/luisf3.png";
 
 // Styles
 import styles from "../../styles/homePresentation/presentationComponent.module.css";
@@ -57,9 +57,8 @@ let PresentationComponent = () => {
             <CardContent className={styles.cardContent}>
               <Typography
                 gutterBottom
-                variant="h5"
+                variant="h3"
                 component="div"
-                color="primary"
                 className={styles.title}
               >
                 Developer LuisF3
@@ -70,10 +69,10 @@ let PresentationComponent = () => {
               <Typography variant="body1" component="p">
                 developerluisf3@outlook.com
               </Typography>
-              <Typography variant="body1" component="p">
-                Mis redes sociales!!!
-              </Typography>
             </CardContent>
+            <Typography variant="body1" sx={{ textAlign: "center" }}>
+              Mis redes sociales:
+            </Typography>
             <SocialNetwork />
           </CardActions>
         </Card>
