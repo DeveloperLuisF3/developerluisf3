@@ -502,7 +502,7 @@ let MiniDrawer = ({ children }: Props) => {
           )}
           {status === "unauthenticated" && (
             <Box sx={{ flexGrow: 0, ml: 2 }}>
-              <Avatar alt="MyAvatar" src="/img/profile/luisf3.png" />
+              <Avatar alt="MyAvatar" src="/img/avatar/luisf3.png" />
             </Box>
           )}
         </Toolbar>
