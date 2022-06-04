@@ -38,7 +38,7 @@ let ImgJavascript = () => {
             <CardMedia
               component="img"
               alt="Javascript Img"
-              image="img/imgJavascript/imgJs.png"
+              image="img/home/back-end.jpg"
               title="Javascript Img"
               className={styles.media}
             ></CardMedia>
