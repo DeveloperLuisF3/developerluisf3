@@ -23,12 +23,9 @@ import JsDeveloper from "./jsDeveloper";
 // Styled
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
-  ...theme.typography.h1,
+  ...theme.typography.h2,
   marginBottom: 3,
   padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.primary.main,
-  fontWeight: "bold",
 }));
 
 // Main component
@@ -36,7 +33,7 @@ let JsWrapper = () => {
   const { data: session, status } = useSession();
   return (
     <Box className={styles.boxJs}>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         <Grid item xs={12}>
           {status === "loading" ? (
             <Stack>
