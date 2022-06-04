@@ -14,9 +14,11 @@ const CoverPageImg = styled("div")(({ theme }) => ({
   minWidth: "100%",
   minHeight: "100vh",
   backgroundImage:
-    "-webkit-linear-gradient(rgba(25,25,25,.9), rgba(0,0,0,.1) ), url(/img/coverPage/home.png)",
+    "-webkit-linear-gradient(rgba(25,25,25,.9), rgba(0,0,0,.1) ), url(/img/coverPage/matrix.jpg)",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundAttachment: "fixed",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
