@@ -13,6 +13,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
+import PersonIcon from "@mui/icons-material/Person";
+import PublicIcon from "@mui/icons-material/Public";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { green, purple } from "@mui/material/colors";
@@ -71,6 +73,33 @@ let ListComponent = ({ open }) => {
             </ListItemButton>
           </a>
         </Link>
+        <Link href="/profile">
+          <a>
+            <ListItemButton
+              sx={{
+                meinHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+                "&:hover": {
+                  backgroundColor: purple[50],
+                },
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                <PersonIcon color="primary" />
+              </ListItemIcon>
+              <ListItemText sx={{ opacity: open ? 1 : 0 }} color="primary">
+                <ListText>Perfil</ListText>
+              </ListItemText>
+            </ListItemButton>
+          </a>
+        </Link>
       </List>
       <Divider
         sx={{
@@ -118,6 +147,47 @@ let ListComponent = ({ open }) => {
             />
           </ListItemButton>
         ))}
+      </List>
+      <Divider
+        sx={{
+          ...(open && { mb: 3 }),
+        }}
+      />
+      <ListItemText
+        sx={{
+          ...(!open && { display: "none" }),
+        }}
+      >
+        <ListTitle>Contacto</ListTitle>
+      </ListItemText>
+      <List>
+        <Link href="/socialNetworks">
+          <a>
+            <ListItemButton
+              sx={{
+                meinHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+                "&:hover": {
+                  backgroundColor: purple[50],
+                },
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                <PublicIcon color="primary" />
+              </ListItemIcon>
+              <ListItemText sx={{ opacity: open ? 1 : 0 }} color="primary">
+                <ListText>Redes Sociales</ListText>
+              </ListItemText>
+            </ListItemButton>
+          </a>
+        </Link>
       </List>
       <Divider />
     </div>
