@@ -1,0 +1,36 @@
+.cardMedia {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardContent {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.freelancer {
+  margin-bottom: 5%;
+  font-style: italic;
+  text-decoration: underline;
+}
+/* .contact-section .freelancer:hover{
+    transform: scale(1.2);
+    color: green;
+    transition: 1s;
+} */
+
+.divider {
+  width: 90%;
+  margin: 0% auto 5% auto;
+}
+@media screen and (min-width: 400px) {
+  .divider {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .divider {
+    width: 50%;
+  }
+}

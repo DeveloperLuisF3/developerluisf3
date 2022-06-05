@@ -1,0 +1,33 @@
+.buttonsGroup {
+  width: 100%;
+  margin: 0;
+}
+
+.buttonProfile {
+  width: 100%;
+  margin: 0%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 1px solid #bdbdbd;
+  border-color: rgb(90, 139, 92);
+}
+
+.buttonSkills {
+  width: 100%;
+  margin: 0%;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 1px solid #bdbdbd;
+  border-color: rgb(90, 139, 92);
+}
+
+.buttonHobbies {
+  width: 100%;
+  margin: 0%;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom: 1px solid #bdbdbd;
+  border-color: rgb(90, 139, 92);
+}
