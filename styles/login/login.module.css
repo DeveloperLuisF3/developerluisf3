@@ -17,6 +17,7 @@
 
 .card {
   width: 90%;
+  border: 1px solid #81c784;
 }
 @media screen and (min-width: 600px) {
   .card {
@@ -100,6 +101,6 @@
   width: 80%;
   margin: 0% auto 5% auto;
 }
-.cardFooter .title {
+.title {
   text-align: center;
 }
