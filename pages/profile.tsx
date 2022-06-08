@@ -1,4 +1,5 @@
 // Next Js
+import type { NextPage } from "next";
 import Head from "next/head";
 
 // Component
@@ -12,10 +13,12 @@ import Skills from "../components/skills/skillsComponent";
 import Hobbies from "../components/hobbies/hobbies";
 
 // Main component
-let Profile = () => {
+const Profile: NextPage = () => {
   return (
     <Layout>
-      <Head>Profile - DeveloperLuisF3</Head>
+      <Head>
+        <title>Perfil - DeveloperLuisF3</title>
+      </Head>
       <CoverPage>
         <CoverPageProfile>
           <CoverPageTitle />
