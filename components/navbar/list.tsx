@@ -15,8 +15,7 @@ import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
 import PublicIcon from "@mui/icons-material/Public";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import SchoolIcon from "@mui/icons-material/School";
 import { green, purple } from "@mui/material/colors";
 
 // Styled
@@ -114,39 +113,33 @@ let ListComponent = ({ open }) => {
         <ListTitle>Proyectos</ListTitle>
       </ListItemText>
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItemButton
-            key={text}
-            sx={{
-              meinHeight: 48,
-              justifyContent: open ? "initial" : "center",
-              px: 2.5,
-            }}
-          >
-            <ListItemIcon
+        <Link href="/leader">
+          <a>
+            <ListItemButton
               sx={{
-                minWidth: 0,
-                mr: open ? 3 : "auto",
-                justifyContent: "center",
-              }}
-            >
-              {index % 2 === 0 ? (
-                <InboxIcon color="primary" />
-              ) : (
-                <MailIcon color="primary" />
-              )}
-            </ListItemIcon>
-            <ListItemText
-              primary={text}
-              sx={{
-                opacity: open ? 1 : 0,
+                meinHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
                 "&:hover": {
-                  textDecoration: "underline",
+                  backgroundColor: purple[50],
                 },
               }}
-            />
-          </ListItemButton>
-        ))}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                <SchoolIcon color="primary" />
+              </ListItemIcon>
+              <ListItemText sx={{ opacity: open ? 1 : 0 }} color="primary">
+                <ListText>Guías</ListText>
+              </ListItemText>
+            </ListItemButton>
+          </a>
+        </Link>
       </List>
       <Divider
         sx={{
