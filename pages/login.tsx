@@ -2,6 +2,7 @@
 import * as React from "react";
 
 // Next Js
+import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
@@ -26,6 +27,7 @@ import styles from "../styles/login/login.module.css";
 import Layout from "../components/layout/layout";
 import Loader from "../components/loader/responsiveProduct";
 
+// Main component
 let LoginApp = () => {
   const theme = useTheme();
   const { data: session, status } = useSession();
@@ -55,14 +57,17 @@ let LoginApp = () => {
   if (status === "unauthenticated") {
     return (
       <Layout>
+        <Head>
+          <title>Login - Developer LuisF3</title>
+        </Head>
         <Box
           className={styles.container}
           sx={{ backgrounColor: "background.default" }}
         >
-          <Head>
-            <title>Login - Developer LuisF3</title>
-          </Head>
-          <Card className={styles.card}>
+          <Card
+            className={styles.card}
+            sx={{ backgroundColor: "background.default" }}
+          >
             <CardMedia className={styles.cardMedia}>
               <Image
                 src="/img/avatar/luisf3.png"
@@ -124,7 +129,11 @@ let LoginApp = () => {
               </ButtonGroup>
             </CardContent>
             <div className={styles.cardFooter}>
-              <Typography className={styles.title}>
+              <Typography
+                variant="body1"
+                className={styles.title}
+                color="text.primary"
+              >
                 Políticas de seguridad
               </Typography>
             </div>
