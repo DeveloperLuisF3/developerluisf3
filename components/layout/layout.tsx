@@ -154,7 +154,7 @@ let Layout = ({ children }: Props) => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Drawer>
-        <Container className={styles.container}>{children}</Container>
+        <React.Fragment>{children}</React.Fragment>
         <footer className={styles.footer}>
           <a
             href="https://github.com/DeveloperLuisF3/developerluisf3"
