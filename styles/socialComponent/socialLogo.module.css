@@ -1,0 +1,121 @@
+.box {
+  width: 80%;
+  min-height: 100%;
+  margin: 0% auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 25px;
+  height: 25px;
+  margin: 5% auto;
+  border-radius: 3%;
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .card {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.action {
+  width: 100%;
+  height: 100%;
+}
+
+.instagram {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/socialNetworks/instagram.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagram:hover {
+  opacity: 0.4;
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.facebook {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/socialNetworks/facebook.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facebook:hover {
+  opacity: 0.4;
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.youtube {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/socialNetworks/youtube.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube:hover {
+  opacity: 0.4;
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.github {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/socialNetworks/github.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.github:hover {
+  opacity: 0.4;
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.tiktoc {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/socialNetworks/tiktok.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tiktoc:hover {
+  opacity: 0.4;
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.linkedin {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/socialNetworks/inkedlin.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkedin:hover {
+  opacity: 0.4;
+  transform: rotateY(360deg);
+  transition: 2s;
+}
