@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Home - {siteTitle}</title>
+        <title>Inicio - {siteTitle}</title>
       </Head>
       <CoverPage>
         <CoverPageHome>
